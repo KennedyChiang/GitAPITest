@@ -43,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		13921F15D7528A038F3D3E7E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		454DB2A41BD4A09E00EC5DF2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		456AAD1A1BD162DC00AC1E42 /* RepoInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepoInfoViewController.h; sourceTree = "<group>"; };
 		456AAD1B1BD162DC00AC1E42 /* RepoInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoInfoViewController.m; sourceTree = "<group>"; };
 		456AAD1D1BD16D8E00AC1E42 /* NSDate+SameDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SameDay.h"; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		456E6F491BD100690082A3F4 /* RepoCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoCalendarViewController.m; sourceTree = "<group>"; };
 		456E6F4B1BD144FC0082A3F4 /* GeneralMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralMethod.h; sourceTree = "<group>"; };
 		456E6F4C1BD144FC0082A3F4 /* GeneralMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralMethod.m; sourceTree = "<group>"; };
-		456E6F4E1BD145AF0082A3F4 /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
 		99991177A654E7D8AD5F9FA7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D3A97C6DA28BBD03D210695A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				456E6F101BD0E36C0082A3F4 /* main.m */,
-				456E6F4E1BD145AF0082A3F4 /* Prefix.h */,
+				454DB2A41BD4A09E00EC5DF2 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -466,6 +466,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/ChiangML/Documents/Total Workspace/iOS/GitAPITest/GitAPITest/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -508,6 +510,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/ChiangML/Documents/Total Workspace/iOS/GitAPITest/GitAPITest/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -528,7 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/ChiangML/Documents/Total Workspace/iOS/GitAPITest/GitAPITest/Prefix.h";
+				GCC_PREFIX_HEADER = "/Users/ChiangML/Documents/Total Workspace/iOS/GitAPITest/GitAPITest/PrefixHeader.pch";
 				INFOPLIST_FILE = GitAPITest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -543,7 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/ChiangML/Documents/Total Workspace/iOS/GitAPITest/GitAPITest/Prefix.h";
+				GCC_PREFIX_HEADER = "/Users/ChiangML/Documents/Total Workspace/iOS/GitAPITest/GitAPITest/PrefixHeader.pch";
 				INFOPLIST_FILE = GitAPITest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
